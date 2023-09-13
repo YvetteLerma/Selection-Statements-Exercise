@@ -4,8 +4,6 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What is my favorite number?");
-
             var r = new Random();
             var favNumber = r.Next(1, 50);
 
@@ -14,13 +12,13 @@
 
             if (userInput < favNumber)
             {
-            Console.WriteLine($"TOO LOW!");
+            Console.WriteLine($"{userInput} IS TOO LOW!");
 
             }
 
             else if (userInput > favNumber)
             {
-            Console.WriteLine($"Too high");
+            Console.WriteLine($"{userInput} IS TOO HIGH!");
 
             }
             else
